@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- Écrit par: Linda Nzumotcha -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Jeu de taquin</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="taquinjquery.js"> </script>
+        
+        <link charset="utf-8" href="overlay.css" type="text/css"/>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Description:</legend>
+            <div class="affichage">
+                URL de l'image: <input id="urlImage" type="text" 
+                    value="https://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"/><br/>
+                <span> Nombre de lignes: <input id="nbRows" type="text" value="3"/>
+                    de colonnes: <input id="nbCols" type="text" value="3"/> </span>
+                
+                Affichage des numéros <input type="checkbox" id="numeros" value="Number" checked="checked"/>
+                <button type="button" value="Afficher" id="afficher">Afficher</button> 
+                <button type="button" value="Brasser les Tuiles" id="brasser">Brasser les Tuiles</button> 
+            </div>
+            
+            <div class="affichage">
+                <h1>Déplacement: <a id="compte"> </a></h1>
+                
+            </div>
+            
+            
+        </fieldset>
+        
+        <div id="overlay"></div>
+    </body>
+</html>
+
